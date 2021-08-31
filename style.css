@@ -1,0 +1,270 @@
+* {box-sizing: border-box;
+}
+ .container {width: 80%;
+margin: auto;}
+
+.clear {clear: both}
+
+body {font-family: 'Roboto Slab', serif;
+margin: 0;}
+
+/* Home */
+
+.home {
+height: 100vh;
+background-image: url(./img/slider/slider-01.jpg);
+background-size: cover;
+background-position: center;
+position: relative;
+margin-bottom: 8%;
+display: flex;
+justify-content: center;
+align-items: center;}
+
+.home .bg {position: absolute;
+background-color: rgba(0, 0, 0, 0.8);
+height: 100vh;
+width:100%;
+left: 0px;
+top: 0px;
+}
+ 
+.home .alex {position: absolute;
+}
+
+.alex h4 {
+    width: 25ch;
+    animation: typing 0.75s steps(30);
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 210
+    }
+  }
+  
+
+.home h1 {color: #ff305b;
+font-size: 70px;}
+.home h4 {color: whitesmoke;
+text-align: center;
+font-size: 25px;}
+
+.navbar {position: absolute;
+z-index: 1;
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin: 0 10%;
+}
+
+.fokir {color: #ff305b;
+    margin: 10px;
+font-size: 25px;}
+
+.navbar ul {color: white;
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+width: 50%; 
+}
+
+.navbar li {padding: 5px;}
+/* About */
+
+.about .fab {padding: 5px;
+color: whitesmoke}
+
+.about .fab:hover {padding: 5px;
+    color: #ff305b;} 
+
+.img-container {
+    position: relative;
+    border: solid #555555 8px;
+    border-radius: 5px;
+    margin-right: 50px;
+    
+}
+.img-container:hover .overlay{
+    height: 462px;
+    opacity: 1;
+}
+
+.img-container img {
+    position: relative;
+    width: 378px;
+    height: 462px;
+    left: 25px;
+    top: 25px;
+    border-radius: 5px;
+}
+.overlay {
+    position: absolute;
+    width: 378px;
+    height: 0px;
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    left: 25px;
+    bottom: -25px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .6s;
+}
+
+.about {
+    display: flex;
+    background-color: white;
+    margin: auto; 
+}
+
+
+.caption {
+    /* flex-grow: 5; */
+    /* width: 60%; */
+float: right;
+/* max-width: ; */
+}
+
+hr {border: 0.25px dashed grey;}
+
+li {list-style: none;
+    margin: auto;
+}
+
+.about ul {margin: 0;
+    padding: 0;
+}
+
+.list {display: flex;
+margin: 15px 0 15px 0;
+}
+
+.list li {padding: 8px;}
+.list .divided {padding-left: 20%;}
+
+button {padding: 15px 15px 15px 15px;
+background-color: #ff305b;
+border-style: none;
+border-radius: 5px;
+color: white;}
+
+/* Services */
+.services .fas {color: #ff305b;
+font-size: x-large;}
+
+.services {text-align: center;
+    width: 100%;
+margin-top: 10%;
+background-color: #f1f1f1; 
+overflow: auto;
+}
+
+.services hr {border: 0.25px solid #ff305b;
+width: 20%;}
+
+.services .item {float: left;
+text-align: center;
+padding: 3%;
+width: 25%;
+margin-top: 2%;}
+
+.services .item:hover {float: left;
+    text-align: center;
+    padding: 3%;
+    width: 25%;
+    margin-top: 2%;
+background-color: white;}
+
+/* Products */
+
+.products {
+    text-align: center;
+    padding-top: 5%;
+}
+
+.products li {list-style: none;
+}
+
+.products ul {display: flex;
+justify-content: center;
+width: 40%;
+margin: auto;
+margin-bottom: 3%;
+}
+.products .pix {
+display: flex;
+flex-flow: row wrap;
+justify-content: center;
+}
+
+.products .pix img {
+width: 33.3%;
+padding: 15px 15px 15px 15px;
+}
+
+/* Team */
+.team {background-color: #f1f1f1;
+display: flex;
+justify-content: space-around;
+align-items: center;
+height: 50vh;
+}
+
+.team .sec {text-align: center;}
+
+.team .fas {color: #ff305b;
+font-size: x-large;}
+.team .far {color: #ff305b;
+    font-size: x-large;}
+
+/* Clients */
+
+.clients h2 {
+text-align: center;}
+
+.clients hr {border: 0.25px solid #ff305b;
+    width: 10%;
+    margin-bottom: 2%}
+
+.clients .both {display: flex;
+    background-color: #f1f1f1;
+    width: 45%;
+    margin: auto;
+    padding: 2%;
+border-radius: 5px;}
+
+.clients .both img {border-radius: 50%;
+    height: 120px;
+    width: 160px;
+    margin: 30px 15px;}
+
+/* Contact US */
+.contact h2 {text-align: center;}
+.contact hr {border: 0.25px solid #ff305b;
+    width: 10%;
+    margin-bottom: 2%}
+
+
+.contact .all {display: flex;
+flex-direction: column;
+margin: auto;
+width: 100%;
+padding: 0% 30%;}
+
+.contact .name {padding: .5rem;
+width: 20em;}
+
+.contact .subj {padding: .5rem;
+    width: 100%;
+    margin-top: 1.5rem}
+
+.contact textarea {padding: .5rem;
+    width: 100%;
+font: 400 13.3333px Arial}
+
+.contact button {margin-left: 31em;}
